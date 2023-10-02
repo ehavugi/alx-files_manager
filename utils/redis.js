@@ -3,7 +3,6 @@ const { promisify } = require('util');
 
 class RedisClient {
   constructor() {
-    
     this.client = redis.createClient();
 
     // Handle Redis client errors
@@ -13,8 +12,8 @@ class RedisClient {
   }
 
   isAlive() {
-     //console.log('Client connected:', this.client.connected);
-     return this.client.connected;
+    // console.log('Client connected:', this.client.connected);
+    return this.client.connected;
   }
 
   async get(key) {
@@ -34,4 +33,3 @@ class RedisClient {
 const redisClient = new RedisClient();
 
 module.exports = redisClient;
-
