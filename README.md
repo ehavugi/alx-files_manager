@@ -1,6 +1,6 @@
 # alx-files\_manager
 ## Mandatory
-- [ ] 0. Redis utils
+- [x] 0. Redis utils
 - [ ] 1. MongoDB utils
 - [ ] 2. First API
 - [ ] 3. Create a new user
