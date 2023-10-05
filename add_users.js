@@ -7,7 +7,7 @@ const user = {
 
 async function insertUser() {
   const db = dbClient.client.db();
-  const usersCollection = db.collection('users');
+  const usersCollection = db.collection('files');
   await usersCollection.insertOne(user); // insert the user document
 }
 
